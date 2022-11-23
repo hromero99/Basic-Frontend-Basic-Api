@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Person Basic Front</title>
+</head>
+<body>
+    {{persons}}
+    {% for person in persons %}
+        <p>{{person.get("first_name")}}</p>
+        <p>{{person.get("last_name")}}</p>
+        <p>{{person.get("email")}}</p>
+        <p>----------------------</p>
+
+   {% endfor %}
+   
+</body>
+</html>
